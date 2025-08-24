@@ -1,0 +1,54 @@
+<!doctype html>
+<!-- contato.html - formulário visual de contato -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contato — Samuel</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="brand">Samuel Garabini — Portfólio</div>
+    <nav class="nav">
+      <a href="index.html">Sobre</a>
+      <a href="formacao.html">Formação & Experiência</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container-page">
+  <section class="hero">
+    <div class="avatar">CT</div>
+    <div>
+      <h1>Contato</h1>
+      <p>Use o formulário visual abaixo para apresentar como os visitantes podem enviar mensagens. (Este formulário é apenas visual — sem backend)</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Dados</h2>
+    <p><strong>Nome:</strong> Samuel Garabini</p>
+    <p><strong>Email:</strong> samuelgarabini2.0@gmail.com</p>
+    <p><strong>Telefone:</strong> (31) 99518-8698</p>
+  </section>
+
+  <section class="section">
+    <h2>Formulário de contato (visual)</h2>
+    <form class="form" onsubmit="alert('Este site é exemplo — configure um backend para enviar mensagens.'); return false;">
+      <input class="input" type="text" placeholder="Seu nome" required>
+      <input class="input" type="email" placeholder="Seu email" required>
+      <input class="input" type="tel" placeholder="Seu telefone">
+      <textarea class="input" rows="5" placeholder="Mensagem"></textarea>
+      <button class="btn" type="submit">Enviar (exemplo)</button>
+    </form>
+  </section>
+
+  <footer class="footer">Contato — Portfólio pessoal.</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+/* styles.css - layout and visual design for the portfolio site */
+/* Reset-ish */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Arial, sans-serif; }
+body { background: #f6f7fb; color:#111; line-height:1.5; padding-top:70px; }
+
+/* Header (fixed) */
+.header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: linear-gradient(90deg, #ffffffcc, #eef3ffcc);
+  border-bottom: 1px solid #d6dcf7;
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+}
+.header .container { max-width:1100px; margin:0 auto; padding:12px 18px; display:flex; align-items:center; justify-content:space-between; }
+.brand { font-weight:700; letter-spacing:0.4px; font-size:18px; color:#0b3b6f; }
+.nav { display:flex; gap:12px; }
+.nav a {
+  display:inline-block;
+  padding:8px 14px;
+  border:3px solid #111;
+  background:white;
+  text-decoration:none;
+  color:#0b3b6f;
+  font-weight:600;
+  border-radius:4px;
+  box-shadow: 4px 4px 0 #0b3b6f33;
+}
+.nav a:hover { transform:translateY(-2px); transition:0.18s; }
+.container-page { max-width:1100px; margin:40px auto; padding:36px 18px; background:white; border-radius:12px; box-shadow: 0 6px 20px rgba(10,20,50,0.06); }
+
+/* Hero */
+.hero { padding:28px 18px; display:flex; gap:24px; align-items:center; }
+.avatar {
+  width:130px; height:130px; border-radius:12px; background:linear-gradient(135deg,#dfe9ff,#ffffff);
+  display:flex; align-items:center; justify-content:center; font-weight:700; color:#0b3b6f; font-size:28px; border:2px solid #cbd8ff;
+}
+.hero h1 { font-size:28px; color:#0b3b6f; margin-bottom:8px; }
+.hero p { color:#334155; }
+
+/* Sections */
+.section { padding:18px; border-top:1px dashed #e6eaf8; }
+.section h2 { margin-bottom:12px; color:#0b3b6f; }
+.section p { margin-bottom:10px; color:#2b3350; }
+
+/* Portfolio list */
+.portfolio-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:12px; }
+.card { background:linear-gradient(180deg,#ffffff,#fbfdff); padding:14px; border-radius:10px; border:1px solid #eef2ff; box-shadow:0 8px 20px rgba(15,32,100,0.04); }
+.card h3 { font-size:16px; margin-bottom:8px; }
+.card p { font-size:14px; color:#3b4460; }
+
+/* Contact form visual */
+.form { display:grid; gap:10px; max-width:520px; }
+.input, textarea { padding:10px 12px; border-radius:8px; border:1px solid #cfd8ff; font-size:14px; width:100%; }
+.btn { display:inline-block; padding:10px 14px; border-radius:8px; border:none; cursor:pointer; background:#0b3b6f; color:white; font-weight:700; }
+
+/* Footer */
+.footer { text-align:center; padding:18px; color:#5b667f; font-size:13px; }
+
+/* Responsive */
+@media (max-width:640px){
+  .hero { flex-direction:column; align-items:flex-start; }
+  .nav { flex-wrap:wrap; }
+}
